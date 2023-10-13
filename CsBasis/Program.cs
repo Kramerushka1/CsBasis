@@ -2,13 +2,18 @@
 
 class MainClass
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
+        const string MyName = "Jane";
 
-        string myName;
-        myName = "Jane";
+        Console.WriteLine(MyName);
 
-        Console.WriteLine(myName);
+        Console.WriteLine("\tПривет, мир");
+        Console.WriteLine("\tМне 27 лет");
+        Console.WriteLine($"\tMy name is\n {MyName}");
+
+        Console.WriteLine("\u0040");
+        Console.WriteLine("\u0023");
 
         Console.ReadKey();
     }
