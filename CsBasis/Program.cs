@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 
 class Program
 {
@@ -53,10 +54,19 @@ class Program
     */
 
     //Task 3.4.3
+    /*
     enum Semaphore
     {
         Red = 100,
         Yellow = 200,
         Green = 300
     }
-}   
+    */
+
+    //Task 3.6.8
+    public static void Main(string[] args)
+    {
+        double result = 10 % 3;
+        Console.WriteLine(result);
+    }
+}
