@@ -1,7 +1,6 @@
 using System;
-using static System.Net.Mime.MediaTypeNames;
 
-class MainClass
+class Program
 {
     //Task 3.2.4
     /*
@@ -36,6 +35,7 @@ class MainClass
     */
 
     //Task 3.3.2
+    /*
     static void Main(string[] args)
     {
         string name = "Vik";
@@ -50,4 +50,8 @@ class MainClass
 
         Console.ReadKey();
     }
-}
+    */
+
+    //Task 3.4.3
+
+}   
