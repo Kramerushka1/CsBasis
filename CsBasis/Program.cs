@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CsBasis
+class MainClass
 {
-    internal class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-        }
+
+        string myName;
+        myName = "Jane";
+
+        Console.WriteLine(myName);
+
+        Console.ReadKey();
     }
 }
