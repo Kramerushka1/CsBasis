@@ -1,8 +1,21 @@
 using System;
-using System.Threading.Tasks;
 
 class Program
 {
+    static void Main(string[] args)
+    {
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+        Console.Write("Enter your age: ");
+        byte age = checked((byte)int.Parse(Console.ReadLine()));
+        Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+
+        Console.Write("Enter your birthdate: ");
+
+        string birthdate = Console.ReadLine();
+        Console.WriteLine("Your birthdate is {0}", birthdate);
+    }
+
     //Task 3.2.4
     /*
     static void Main(string[] args)
@@ -64,9 +77,58 @@ class Program
     */
 
     //Task 3.6.8
+    /*
     public static void Main(string[] args)
     {
         double result = 10 % 3;
         Console.WriteLine(result);
     }
+    */
+
+    //Task 3.7.4
+    /*
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+        Console.Write("Enter your age: ");
+        byte age = checked((byte)int.Parse(Console.ReadLine()));
+        Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+        
+        Console.Write("What is your favorite day of week? ");
+        DaysOfWeek day = (DaysOfWeek) byte.Parse(Console.ReadLine());
+        Console.WriteLine("Your favorite day is {0} ", day);
+
+        Console.ReadKey();
+    }
+
+    enum DaysOfWeek : byte
+    {
+        Monday = 1,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
+    */
+
+    //var
+    /*
+    public static void Main(string[] args)
+    {
+        Console.Write("What is your Name? ");
+        var name = Console.ReadLine();
+
+        Console.Write("How old are you? ");
+        var age = checked((byte)int.Parse(Console.ReadLine()));
+        Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+
+        Console.Write("What is your favorite day of week? ");
+
+        var day = (DayOfWeek)int.Parse(Console.ReadLine());
+        Console.WriteLine("Your favorite day is {0}", day);
+    }
+    */
 }
